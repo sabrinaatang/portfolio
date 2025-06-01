@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioPage {
+    position: relative; /* Keeps the portfolio page fixed */
+    top: 0; /* Ensures it starts at the top */
+    width: 100%; /* Makes it span the full width */
+    height: 100vh; /* Makes it span the full viewport height */
+    background-image: url('../images/portfolioBackground.png'); /* Correct path for public assets */
+    background-size: cover; /* Ensures the background image covers the container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    display: flex; /* Enables flexbox for centering content */
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+}
+
+.text-panel {
+    position: absolute; /* Positions the text panel as an overlay */
+    z-index: 3; /* Ensures the text panel is above other elements */
+    top: 50%; /* Centers the text panel vertically */
+    left: 50%; /* Centers the text panel horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for the panel's own dimensions */
+    padding: 20px; /* Adds spacing inside the panel */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    color: #F2F1EF;
+}
+
+.text-content p {
+    margin: 10px 0; /* Adds spacing between text lines */
+    font-size: 1.5rem; /* Adjusts font size */
+    color: #F2F1EF; /* Ensures the text color is consistent */
+}
+
+.name {
+    position: relative;
+    color: #F2F1EF;
+    font-size: 18vw;         /* Viewport-based scaling */
+    font-weight: 400;        /* Or use 'bold' depending on font */
+    color: white;            /* Or adjust to match your background */
+    line-height: 1;
+    letter-spacing: 0.1em;
+    bottom: 0;
+    left: 0;
+}
+.projects {
+    width: 100%; /* Makes the glance section span the full width */
+    background-color: #f4f4f4; /* Optional: Adds a light background color */
+    color: #333; /* Sets the text color */
+}
