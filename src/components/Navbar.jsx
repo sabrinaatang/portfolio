@@ -7,7 +7,7 @@ function Navbar() {
         <div className="bar">
             <nav>
                 <ul>
-                    <li><Link to="/">Portfolio</Link></li>
+                    <li><Link to="/portfolio/">Portfolio</Link></li>
                     <li><Link to="/blog">Blog</Link></li>
                     <li><Link to="/photography">Photography</Link></li>
                     <li><Link to="/about">About</Link></li>
