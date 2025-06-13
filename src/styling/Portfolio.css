@@ -3,20 +3,54 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: monospace;
 }
-
+  
 .portfolioPage {
     position: relative; /* Keeps the portfolio page fixed */
     top: 0; /* Ensures it starts at the top */
     width: 100%; /* Makes it span the full width */
     height: 100vh; /* Makes it span the full viewport height */
-    background-image: url('../images/portfolioBackground.png'); /* Correct path for public assets */
-    background-size: cover; /* Ensures the background image covers the container */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background: 
+        radial-gradient(circle at 20% 40%, rgba(255, 244, 211, 0.95) 0%, transparent 70%),
+        radial-gradient(circle at 60% 50%, rgba(253, 182, 67, 0.85) 0%, transparent 70%),
+        radial-gradient(circle at 80% 70%, rgba(250, 214, 123, 0.8) 0%, transparent 70%);
+    background-color: #FFFDF9;
+    background-blend-mode: normal;
+    margin: 0;
+    height: 100vh;
     display: flex; /* Enables flexbox for centering content */
     align-items: center; /* Centers content vertically */
-    justify-content: center;
+    justify-content: center; /* Centers content horizontally */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.gradient-background {
+    background: linear-gradient(137deg,#fffdf9,#FFF4D3);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .text-panel {
@@ -26,29 +60,60 @@ html, body {
     left: 50%; /* Centers the text panel horizontally */
     transform: translate(-50%, -50%); /* Adjusts for the panel's own dimensions */
     padding: 20px; /* Adds spacing inside the panel */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    color: #F2F1EF;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    font-family: monospace;
 }
 
 .text-content p {
     margin: 10px 0; /* Adds spacing between text lines */
-    font-size: 1.5rem; /* Adjusts font size */
-    color: #F2F1EF; /* Ensures the text color is consistent */
+    font-size: 2.5rem; /* Adjusts font size */
+    color: #4A3F2A;
 }
 
 .name {
     position: relative;
-    color: #F2F1EF;
-    font-size: 18vw;         /* Viewport-based scaling */
-    font-weight: 400;        /* Or use 'bold' depending on font */
-    color: white;            /* Or adjust to match your background */
+    font-size: 4vw;
+    font-weight: 400;
     line-height: 1;
-    letter-spacing: 0.1em;
-    bottom: 0;
-    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0ch; /* Starting point */
+    animation: typing 4s steps(20, end) forwards, blink 0.75s step-end infinite;
+    border-right: 0.15em solid #FFFDF9;
+    font-family: monospace;
+    padding-bottom: 5px;
 }
+
+@keyframes typing {
+    from { width: 0ch; }
+    to { width: 13ch; } /* Match number of characters */
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #4A3F2A; }
+  }
+  
+.projectSection {
+    font-family: monospace;
+    color: #4A3F2A;
+}
+
 .projects {
-    width: 100%; /* Makes the glance section span the full width */
-    background-color: #f4f4f4; /* Optional: Adds a light background color */
-    color: #333; /* Sets the text color */
+    width: 100%; /* Makes the section span the full width */
+    min-height: 300px; /* Ensures the section has a minimum height */
+    display: flex; /* Optional: Enables flexbox for layout */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-family: monospace;
+}
+
+.title {
+    font-size: 3rem; /* Adjusts the font size for the title */
+    font-weight: bold; /* Makes the title bold */
+    color: #4A3F2A;
 }

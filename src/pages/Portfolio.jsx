@@ -1,7 +1,6 @@
 import React from "react";
 import "../styling/Portfolio.css"
-import Project from "../components/Project";
-import theSocialARC from "../images/theSocialARC.png"
+import Projects from "../components/Projects";
 
 
 const Portfolio = () => {
@@ -10,30 +9,22 @@ const Portfolio = () => {
         <div className="portfolioPage"> 
             <div className="text-panel">
                 <div className="text-content">
-                    
+                    <p>Developer.</p>
                     <p>Designer.</p>
                     <p>Writer.</p>
                     <p>Thinker.</p>
                     <p>Creative.</p>
-                    <p><b>Sabrina Tang.</b></p>
+                    <p className="name"><b>Sabrina Tang.</b></p>
                 </div>
             </div>
-
         </ div>
-        
         <div className="projectSection">
             <div className="sectionHeader">
-                <div className="title"><h1>Projects</h1></div>
+                <div className="title">Projects</div>
                 <p className="description">A brief overview of various case studies and projects I've worked on.</p>
             </div>
             <div className="projects"> 
-                <Project imageSrc={theSocialARC} name="The Social Arc"/>
-            </div>
-            <div className="projects"> 
-                <Project imageSrc={theSocialARC} name="The Social Arc"/>
-            </div>
-            <div className="projects"> 
-                <Project imageSrc={theSocialARC} name="The Social Arc"/>
+                <Projects />
             </div>
         </div>
         
