@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/TheSocialARC.css";
 
-function TheSocialARC() {
+function TSA() {
     return (
         <>
             <div className="ARCpopup">
@@ -16,4 +16,4 @@ function TheSocialARC() {
     );
 }
 
-export default TheSocialARC;
+export default TSA;

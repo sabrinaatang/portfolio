@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styling/Project.css";
-import TheSocialARC from "../components/TheSocialARC.jsx";
+import TheSocialARC from "./TSA.jsx";
 import theSocialARC from "../images/theSocialARC.png"
 
 function Projects() {
