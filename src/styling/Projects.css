@@ -7,6 +7,7 @@
     border: 1px solid rgba(211, 211, 211, 0.8); /* Adds a thin light grey opaque border */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(255, 255, 255, 0.5); /* Adds a subtle shine and shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: visible;
 }
 .project:hover {
     transform: scale(1.05); /* Slightly lifts the div on hover */
@@ -84,7 +85,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 0 320px;
     box-sizing: border-box;
     flex-direction: column;
 }
@@ -117,5 +118,42 @@
     to {
         transform: translateY(0); /* End at its original position */
         opacity: 1; /* Fully visible */
+    }
+}
+@media (max-width: 768px) {
+    .project {
+        width: 90%; /* Reduce the width of project cards for tablets */
+        margin: 10px auto; /* Add spacing between cards and center them */
+    }
+
+    .project img {
+        max-width: 100%; /* Ensure images fit within the project card */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .overlay-container {
+        width: 95%; /* Make the overlay container fit smaller screens */
+        max-width: 600px; /* Limit the maximum width */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%; /* Make project cards take full width on mobile */
+        margin: 10px 0; /* Add spacing between cards */
+    }
+
+    .project img {
+        max-width: 100%; /* Ensure images fit within the project card */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .overlay-container {
+        width: 100%; /* Make the overlay container take full width */
+        max-width: 400px; /* Limit the maximum width for mobile */
+    }
+
+    .overlay-content {
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 }

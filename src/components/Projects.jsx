@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styling/Project.css";
+import "../styling/Projects.css";
 import TheSocialARC from "./TSA.jsx";
 import theSocialARC from "../images/theSocialARC.png"
 
@@ -31,7 +31,6 @@ function Projects() {
 
     return (
         <>
-
             {projects.map((project) => (
                 <div
                     key={project.id}

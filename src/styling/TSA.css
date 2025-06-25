@@ -1,0 +1,85 @@
+.ARCPopup {
+  width: 100vh;
+  height: 100vh;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  padding: 0 1em;
+}
+p {
+  font-size: 1rem;
+  padding: 0 1em;
+}
+.prototype {
+  max-width: 100%; /* Ensures the iframe scales with the container */
+  height: 720px; /* Default height for larger screens */
+  border-radius: 24px; /* Adds rounded corners */
+  margin: 0 auto 1.5rem auto; /* Centers the iframe and adds spacing below */
+  display: block; /* Ensures the iframe behaves like a block element */
+}
+
+.hello {
+  font-size: 1.2rem; /* Default font size */
+  color: #4A3F2A;
+  text-align: center;
+  margin: 0 auto; /* Centers the text */
+  padding: 10px; /* Adds spacing around the text */
+}
+
+.TSAimage {
+  max-width: 100%;
+  height: auto;
+}
+.evidence {
+  display: flex;
+  width: 50%;
+  border-left: 4px solid #4A3F2A; 
+  padding-left: 1em;
+  margin: 1em 0;
+}
+.insight-header {
+  background-color: #FFF4D3;
+  box-sizing: border-box;
+  padding: 0.1em 0;
+}
+.findings {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+/* Responsive Styles */
+
+/* For tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+  .prototype {
+      height: 500px; /* Reduce height for smaller screens */
+      border-radius: 20px; /* Slightly smaller rounded corners */
+  }
+
+  .hello {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  .img {
+      max-width: 90%; /* Reduce max width for images */
+  }
+}
+
+/* For mobile devices (screen width 480px and below) */
+@media (max-width: 480px) {
+  .prototype {
+      height: 400px; /* Further reduce height for very small screens */
+      border-radius: 16px; /* Smaller rounded corners */
+  }
+
+  .hello {
+      font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .img {
+      max-width: 90%; /* Further reduce max width for images */
+  }
+}

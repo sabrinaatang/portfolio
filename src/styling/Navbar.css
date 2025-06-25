@@ -10,8 +10,6 @@
     padding: 10px 20px; /* Adds padding for spacing */
     background-color: rgba(255, 239, 200, 0.4);
     transition: background-color 0.3s ease;
-    /* box-shadow: inset 0 0 10px rgba(225, 225, 225, 0.5); */
-
 }
 
 nav ul {
@@ -34,8 +32,6 @@ nav ul li a {
     transition: color 0.3s ease; /* Adds a hover effect */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
     color: #4A3F2A;
-    font-family: monospace;
-
 }
 
 nav ul li a:hover {

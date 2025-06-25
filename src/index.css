@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: monospace;
+  font-family: sans-serif;
   font-weight: 400; 
   background-color: #F2F1EF;
   width: 100%;
@@ -17,14 +17,14 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: monospace;
+  font-family: sans-serif;
   font-weight: 400; /* Bold for headings */
-  font-size: 2rem; /* Default font size for headings */
+  font-size: 3rem; /* Default font size for headings */
   color: #4A3F2A;
 }
 
 p {
-  font-family: monospace;
+  font-family: sans-serif;
   font-weight: 30; /* Normal weight for paragraphs */
   font-size: 1rem; /* Default font size for paragraphs */
   color: #4A3F2A;
@@ -48,5 +48,9 @@ p {
 
   p {
     font-size: 0.8rem; /* Further reduce paragraph size for very small screens */
+  }
+
+  #root {
+    padding: 5px; /* Add smaller padding for very small screens */
   }
 }
