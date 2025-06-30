@@ -21,13 +21,6 @@ p {
   display: block; /* Ensures the iframe behaves like a block element */
 }
 
-.hello {
-  font-size: 1.2rem; /* Default font size */
-  color: #4A3F2A;
-  text-align: center;
-  margin: 0 auto; /* Centers the text */
-  padding: 10px; /* Adds spacing around the text */
-}
 
 .TSAimage {
   max-width: 100%;

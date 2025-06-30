@@ -11,11 +11,11 @@ html, body {
     top: 0; /* Ensures it starts at the top */
     width: 100%; /* Makes it span the full width */
     height: 100vh; /* Makes it span the full viewport height */
-    background: 
+    /* background: 
         radial-gradient(circle at 20% 40%, rgba(255, 244, 211, 0.95) 0%, transparent 70%),
         radial-gradient(circle at 60% 50%, rgba(253, 182, 67, 0.85) 0%, transparent 70%),
-        radial-gradient(circle at 80% 70%, rgba(250, 214, 123, 0.8) 0%, transparent 70%);
-    background-color: #FFFDF9;
+        radial-gradient(circle at 80% 70%, rgba(250, 214, 123, 0.8) 0%, transparent 70%); */
+    background-color: #ACC979;
     background-blend-mode: normal;
     margin: 0;
     height: 100vh;
@@ -112,4 +112,11 @@ html, body {
     font-size: 3rem; /* Adjusts the font size for the title */
     font-weight: bold; /* Makes the title bold */
     color: #4A3F2A;
+}
+
+.splineScene {
+    width: 100%; /* Makes the Spline scene span the full width */
+    height: 100%; /* Makes the Spline scene span the full height */
+    object-fit: cover; /* Ensures the Spline scene scales properly */
+    display: block; /* Ensures the Spline scene behaves like a block element */
 }

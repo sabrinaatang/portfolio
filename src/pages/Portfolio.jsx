@@ -1,23 +1,16 @@
 import React from "react";
 import "../styling/Portfolio.css"
 import Projects from "../components/Projects";
+import Spline from "@splinetool/react-spline";
+
+
 
 
 const Portfolio = () => {
     return(
         <>
-        <div className="portfolioPage"> 
-            <div className="text-panel">
-                <div className="text-content">
-                    <p>Developer.</p>
-                    <p>Designer.</p>
-                    <p>Writer.</p>
-                    <p>Thinker.</p>
-                    <p>Creative.</p>
-                    <p className="name"><b>Sabrina Tang.</b></p>
-                </div>
-            </div>
-        </ div>
+        <div className="portfolioPage">
+        <Spline scene="https://prod.spline.design/UWHn6oLEv7KLrR3O/scene.splinecode" />        </ div>
         <div className="projectSection">
             <div className="sectionHeader">
                 <div className="title">Projects</div>

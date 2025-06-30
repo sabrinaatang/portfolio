@@ -6,7 +6,7 @@ html, body {
   background-color: #F2F1EF;
   width: 100%;
   height: 100%;
-  color: #4A3F2A;
+  color: #5C0738;
 }
 
 #root {
@@ -20,14 +20,14 @@ h1, h2, h3 {
   font-family: sans-serif;
   font-weight: 400; /* Bold for headings */
   font-size: 3rem; /* Default font size for headings */
-  color: #4A3F2A;
+  color: #5C0738;
 }
 
 p {
   font-family: sans-serif;
   font-weight: 30; /* Normal weight for paragraphs */
   font-size: 1rem; /* Default font size for paragraphs */
-  color: #4A3F2A;
+  color: #5C0738;
 }
 
 /* Responsive Styles */
