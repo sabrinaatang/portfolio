@@ -2,20 +2,24 @@ import React, { useState } from "react";
 import "../styling/Projects.css";
 import TheSocialARC from "./TSA.jsx";
 import theSocialARC from "../images/theSocialARC.png"
+import caretech from "../images/caretech.png";
+import CareTech from "./CareTech.jsx";
 
 function Projects() {
     const projects = [
         {
             id: 1,
+            name: "CareTech",
+            imageSrc: caretech,
+            detailsComponent: <CareTech />
+        },
+        {
+            id: 2,
             name: "TheSocialARC",
             imageSrc: theSocialARC,
             detailsComponent: <TheSocialARC />
         },
-        {
-            id: 2,
-            name: "Another Project",
-            detailsComponent: <p>This is another project showcasing innovative solutions.</p>
-        },
+        
         
     ];
 

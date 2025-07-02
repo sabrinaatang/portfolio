@@ -1,6 +1,13 @@
 import React from "react";
 import "../styling/TSA.css";
 import TSA_Comp_Analysis from "../images/TSA_Comp_Analysis.png"
+import tsaIdeation from "../images/tsaIdeation.png"
+import evo1 from "../images/evo1.png"
+import evo3 from "../images/evo3.png"
+import evo2 from "../images/evo2.png"
+import ueval1 from "../images/ueval1.png"
+import ueval2 from "../images/ueval2.png"
+
 
 function TSA() {
     return (
@@ -67,7 +74,47 @@ function TSA() {
                     </div>
                 </div>
                 <br></br>
-                
+                <h2>Ideation</h2>
+                <div className="ideation" >
+                    <img src={tsaIdeation} alt="Design Ideation Board" className="ideationBoard"></img>
+                    <p>After our team decided on the main essence of our solution and what we wanted to accomplish through our app, we deliberated on what specific features should be included and how we could best implement said features. Since we all had many different perspectives, we first generated ideas individually, and then as a team, we discussed which features or aspects of our application we wanted to scrap, implement, and prioritize within our design. This ideation phase was crucial to our design process because it ensured that all eight members of our team were on the same page moving forward with our design. The decisions our team made based on our discussions defined our approach, flows, and features of our future design artifacts.</p>
+                </div>
+                <br></br>
+                <h2>Analytic Evaluation</h2>
+                <p>Before conducting user testing and finalizing our hi-fi design, we each separately performed an analytic evaluation of our prototype using the Nielsen Norman Groups 10 Usability Heuristics. Through this process, we each individually went through our application, and then we came together to synthesize our findings. As a result of this synthesis, we identified multiple issues with our design at the time that did not meet the standards.</p>
+                <h3>1. Inconsistent date and time formatting</h3>
+                <div className="evolution" style={{display:"flex"}}>
+                    <img src={evo1} style={{width:"50%"}}></img>
+                    <p>As seen on the left, there was no consistency with the language and formatting of dates and time on the different screens on our application. There were differences between pm vs PM, 3-4 vs 3:00-4:00, and more.</p>
+                </div>
+                <h3>2. Inconsistent back buttons</h3>
+                <div className="evolution" style={{display:"flex"}}>
+                    <img src={evo2} style={{width:"50%"}}></img>
+                    <p>As seen on the left, our design had different back buttons, located in different places on different pages. After performing this evaluation, our final design has a consistent location and look for our back button that persists across all pages where necessary.</p>
+                </div>
+                <h3>3. Missing visibility of system status on onboarding</h3>
+                <div className="evolution" style={{display:"flex"}}>
+                    <img src={evo3} style={{width:"50%"}}></img>
+                    <p>As seen on the left, our onboarding pages gave no indication of where the users were in the onboarding process. This did not communicate to the user how far they had progressed, or how much more they had left of onboarding. After performing this evaluation, our final design has a clear progress bar up on the top, indicated by 6 sections, representing the 6 onboarding screens users encounter before landing on the home page. </p>
+                </div>
+                <br></br>
+                <h2>User Evaluation</h2>
+                <p>After finalizing our high-fidelity prototype, we conducted user testing individually to evaluate how well our design aligned with users’ expectations. By observing real users interact with the prototype, we were able to identify areas where the interface lacked clarity or caused confusion. After compiling our results, we identified recurring issues, including an unclear onboarding process, unintuitive button icons, and confusing event labels. These insights helped us refine our design and guided the improvements that led to our final prototype.</p>
+                <h3>1. Onboarding Confusion</h3>
+                <div style={{display:"flex"}}>
+                    <p>Once completing the user testings, our team collectively noticed that many of the interviewees were unsure about what the buddy matching really entailed. There was confusion during the onboarding process, as they didn’t fully understand why they needed to input their interests or goals. Therefore, we created an instructional page prior to the user setting up their profile, to clearly establish the purpose of the user creating an account and reiterate the option to “Skip” a page. There is now greater understandability and coherency between the app’s purpose and the user’s needs.</p>
+                    <img src={ueval1} style={{height:"300px"}}></img>
+                </div>
+                <h3>2. Unintuitive “Request Buddy” and “Message” buttons</h3>
+                <div style={{display:"flex"}}>
+                    <p>Once completing the user testings, our team collectively noticed that many of the interviewees were unsure about what the buddy matching really entailed. There was confusion during the onboarding process, as they didn’t fully understand why they needed to input their interests or goals. Therefore, we created an instructional page prior to the user setting up their profile, to clearly establish the purpose of the user creating an account and reiterate the option to “Skip” a page. There is now greater understandability and coherency between the app’s purpose and the user’s needs.</p>
+                    <img src={ueval2} style={{width:"50%"}}></img>
+                </div>
+                <h3>3. Confusing event labels</h3>
+                <div style={{display:"flex"}}>
+                    <p>The design on the left represents the initial design. It lacked the date and location for the scheduled events and lacked clarity in the labels, “Scheduled for Today” and “Events Happening Today”. </p>
+                    <img style={{width:"50%"}}></img>
+                </div>
             </div>
         </>
     );
