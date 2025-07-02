@@ -10,7 +10,8 @@ const Portfolio = () => {
     return(
         <>
         <div className="portfolioPage">
-        <Spline scene="https://prod.spline.design/UWHn6oLEv7KLrR3O/scene.splinecode" />        </ div>
+        <Spline scene="https://prod.spline.design/UWHn6oLEv7KLrR3O/scene.splinecode" />
+        </ div>
         <div className="projectSection">
             <div className="sectionHeader">
                 <div className="title">Projects</div>

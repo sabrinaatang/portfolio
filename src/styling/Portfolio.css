@@ -111,7 +111,6 @@ html, body {
 .title {
     font-size: 3rem; /* Adjusts the font size for the title */
     font-weight: bold; /* Makes the title bold */
-    color: #4A3F2A;
 }
 
 .splineScene {

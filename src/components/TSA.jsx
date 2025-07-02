@@ -9,6 +9,12 @@ function TSA() {
                 <h1>TheSocialARC</h1>
                 <p>Done in Collaboration with: Minh Anh Bui, Tammie Chen, Sarah Lee, Mikayla McGrath, Megan Sun, Tina Tsai, Gabriel Zhang</p>
                 <br></br>
+                <h2>Final Prototype</h2>
+                <iframe className="prototype"
+                    src="https://embed.figma.com/proto/OPHPzfHywMqkexPUl8MBOq/TheSocialARC-Design-File?page-id=416%3A1796&node-id=431-2035&viewport=973%2C247%2C0.3&scaling=scale-down&content-scaling=fixed&starting-point-node-id=431%3A2035&embed-host=share"
+                    allowFullScreen
+                ></iframe>
+                <br></br>
                 <h2>Problem Statement</h2>
                 <p>Many college students struggle to maintain a physically active lifestyle, with studies showing a “prevalence of 65% of physical inactivity in undergraduate students” (<a href="https://www.mdpi.com/1660-4601/20/5/4494" target="_blank" rel="noopener noreferrer">Santana</a>). As a result, they miss out on the mental and physical benefits of regular physical activity, such as reduced stress, increased energy levels, and improved overall well-being. To truly support student health, it is essential to better understand and address the barriers that prevent students from engaging in regular physical activity and adopting healthier lifestyles.</p>
                 <br></br>
@@ -61,11 +67,7 @@ function TSA() {
                     </div>
                 </div>
                 <br></br>
-                <h2>Final Prototype</h2>
-                <iframe className="prototype"
-                    src="https://embed.figma.com/proto/OPHPzfHywMqkexPUl8MBOq/TheSocialARC-Design-File?page-id=416%3A1796&node-id=431-2035&viewport=973%2C247%2C0.3&scaling=scale-down&content-scaling=fixed&starting-point-node-id=431%3A2035&embed-host=share"
-                    allowFullScreen
-                ></iframe>
+                
             </div>
         </>
     );

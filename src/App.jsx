@@ -4,7 +4,6 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Photography from './pages/Photography';
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import "../src/App.css";
 
@@ -17,7 +16,6 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
