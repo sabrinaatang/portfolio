@@ -5,7 +5,7 @@ import backbay2 from "../images/backbay2.jpg"
 import taipei from "../images/taipei.jpg"
 import angel1 from "../images/angel1.jpg"
 import charm from "../images/charm.jpg"
-import trail from "../images/trail.jpg"
+import trail1 from "../images/trail1.jpg"
 import "../styling/Photography.css"
 
 function Photography() {
@@ -15,7 +15,7 @@ function Photography() {
         { id: 3, src: dogs, alt: "Dogs" },
         { id: 4, src: taipei, alt: "Taipei"},
         { id: 5, src: charm, alt: "charms"},
-        { id: 6, src: trail, alt: "trail"},
+        { id: 6, src: trail1, alt: "trail"},
         { id: 7, src: angel1, alt: "Angel Lai"},
 
     ]
