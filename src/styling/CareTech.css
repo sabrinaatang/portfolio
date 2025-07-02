@@ -1,0 +1,17 @@
+.evidence1 {
+    display: flex;
+    width: 50%;
+    border-left: 4px solid #0470B6; 
+    padding-left: 1em;
+    margin: 1em 0;
+  }
+  .insight-header1 {
+    background-color: #F0FBFC;
+    box-sizing: border-box;
+    padding: 0.1em 0;
+  }
+  .findings1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
