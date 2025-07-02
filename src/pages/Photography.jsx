@@ -3,7 +3,7 @@ import backbay from "../images/backbay.jpg"
 import dogs from "../images/dogs.jpg"
 import backbay2 from "../images/backbay2.jpg"
 import taipei from "../images/taipei.jpg"
-import angel from "../images/angel.jpg"
+import angel1 from "../images/angel1.jpg"
 import charm from "../images/charm.jpg"
 import trail from "../images/trail.jpg"
 import "../styling/Photography.css"
@@ -16,7 +16,7 @@ function Photography() {
         { id: 4, src: taipei, alt: "Taipei"},
         { id: 5, src: charm, alt: "charms"},
         { id: 6, src: trail, alt: "trail"},
-        { id: 7, src: angel, alt: "Angel Lai"},
+        { id: 7, src: angel1, alt: "Angel Lai"},
 
     ]
 
