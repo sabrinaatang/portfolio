@@ -80,3 +80,26 @@ p {
 .ideationBoard  {
   max-width: 100%;
 }
+
+.before, .after {
+  display: flex;
+  flex-direction: column;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.before img, .after img {
+  width: 100%;
+  border: 1px solid #48690E;
+}
+.arrow {
+  width: 5%; /* Scale the width to 5% of its container */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 50px; /* Optional: Limit the maximum width */
+  max-height: 50px;
+}
