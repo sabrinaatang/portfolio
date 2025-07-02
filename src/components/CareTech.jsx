@@ -1,9 +1,14 @@
 import "../styling/CareTech.css"
+import jake from "../images/jake.png"
+import christi from "../images/christi.png"
+import ct1 from "../images/ct1.png"
+import ct2 from "../images/ct2.png"
+
 function CareTech() {
     return(
         <div className="caretech-popup">
             <h1>CareTech</h1>
-            <p>Dandilyonn Seeds 2025 Program</p>
+            <p>Dandilyonn Seeds 2025 Program (in collaboration with Rina Taing and Pamela Cabingao)</p>
             <br></br>
             <h2>Working Prototype</h2>
             <p>will be uploaded soon...</p>
@@ -49,7 +54,23 @@ function CareTech() {
                     </div>
                     </div>
                 </div>
+                <br></br>
+                <h2>User Personas</h2>
+                <p>Based on our key findings, our team developed two user personas that captured our target user audience.</p>
+                <img src={jake} alt="User Persona of Jake Santos-Rivera" style={{width:"100%", border:"1px solid #0470B6", margin:"4px"}}></img>
+                <br></br>
+                <img src={christi} alt="User Persona of Christi Sato" style={{width:"100%", border:"1px solid #0470B6", margin:"4px"}}></img>
+                <br></br>
+                <h2>Ideation</h2>
+                <p>Below are several wireframes that started as the initial ideas for our solution, CareTech, an AI-agent focused solution to providing tailored healthcare needs.</p>
+                <img src={ct1} alt="CareTech Landing Page" style={{width:"100%", margin:"4px"}}></img>
+                <p>(Pictured above)CareTech Landing Page</p>
+                <img src={ct2} alt="CareTech Provider Page" style={{width:"100%", margin:"4px"}}></img>
+                <p>Pictured above is the provider page where users may query a healthcare-focused AI Agent to curate a list of providers. (Not featured: Symptom checker was a feature suggested by my teammates and doesn't reflect my own design choices)</p>
+                <br></br>
+                <br></br>
         </div>
+
     )
 }
 
