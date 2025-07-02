@@ -9,7 +9,9 @@ function CareTech() {
             <p>will be uploaded soon...</p>
             <br></br>
             <h2>Problem Statement</h2>
-            <p>Adult (18+) patients struggle to acquire healthcare provider information and schedule appointments in a timely manner with studies showing “31% in the United States experience wait times for specialists of one month or more” (Source). Without a professional opinion, they struggle to address their health concerns and fully understand the implications of their symptoms. According to the Office of Disease Prevention and Health Promotion, “nearly ⅓ of US  adults have limited personal health literacy” (Office of Disease Prevention and Health Promotion). As a result, patients face health consequences from long wait times and a lack of healthcare literacy. To truly support patient health, it is essential to better understand and address the barriers to timely appointments and preventative care.</p>
+            <p>
+                Adult (18+) patients struggle to acquire healthcare provider information and schedule appointments in a timely manner with studies showing “31% in the United States experience wait times for specialists of one month or more” (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10448708/#:~:text=Long%20wait%20times%20between%20PCP,increasing%20to%2062%25%20in%202020" target="_blank" rel="noopener noreferrer">Source</a>). Without a professional opinion, they struggle to address their health concerns and fully understand the implications of their symptoms. According to the Office of Disease Prevention and Health Promotion, “nearly ⅓ of US  adults have limited personal health literacy”. As a result, patients face health consequences from long wait times and a lack of healthcare literacy. To truly support patient health, it is essential to better understand and address the barriers to timely appointments and preventative care.
+            </p>
             <br></br>
             <h2>Contextual Interview: Key Insights</h2>
                 <div className="insights1">
