@@ -4,6 +4,9 @@ import TheSocialARC from "./TSA.jsx";
 import theSocialARC from "../images/theSocialARC.png"
 import caretech from "../images/caretech.png";
 import CareTech from "./CareTech.jsx";
+import zothomes from "../images/zothomes.png"
+import ZotHomes from "./ZotHomes.jsx"
+import supernova from "../images/supernova.png"
 
 function Projects() {
     const projects = [
@@ -19,7 +22,18 @@ function Projects() {
             imageSrc: theSocialARC,
             detailsComponent: <TheSocialARC />
         },
-        
+        {
+            id: 3,
+            name: "ZotHomes",
+            imageSrc: zothomes,
+            detailsComponent: <ZotHomes />,
+        },
+        {
+            id: 4,
+            name: "SuperNova Academy Inc.",
+            imageSrc:supernova,
+            detailsComponent: null,
+        }
         
     ];
 

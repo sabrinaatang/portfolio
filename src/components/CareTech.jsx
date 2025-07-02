@@ -70,7 +70,6 @@ function CareTech() {
                 <br></br>
                 <br></br>
         </div>
-
     )
 }
 
