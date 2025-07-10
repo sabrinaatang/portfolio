@@ -15,7 +15,9 @@
     z-index: 1;
   }
   
-  .bar-blog,
+  .bar-blog{
+    color: #421D1C;
+  }
   .bar-about,
   .bar-photography {
     position: relative; /* scrolls with page */
@@ -27,7 +29,6 @@
   /* Brand link */
   .brand a {
     text-decoration: none;
-    font-weight: bold;
     font-size: 1rem;
   }
   
@@ -39,7 +40,7 @@
   .bar-blog .brand a,
   .bar-about .brand a,
   .bar-photography .brand a {
-    color: black;
+    color: #050D23;
   }
   
   /* Navigation */
@@ -69,7 +70,7 @@
   .bar-blog nav a,
   .bar-about nav a,
   .bar-photography nav a {
-    color: black;
+    color: #050D23;
   }
   
   nav a:hover {

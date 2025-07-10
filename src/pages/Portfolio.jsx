@@ -23,7 +23,7 @@ const Portfolio = () => {
         </ div>
         <div ref={projectsRef} className="projectSection">
             <div className="sectionHeader">
-                <div className="title">Projects</div>
+                <div className="title"><h1>Projects</h1></div>
                 <p className="description">A brief overview of various case studies and projects I've worked on.</p>
             </div>
             <div className="projects"> 

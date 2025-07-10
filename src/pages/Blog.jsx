@@ -7,14 +7,6 @@ import Navbar from "../components/Navbar.jsx";
 function Blog() {
     const [selectedPost, setSelectedPost] = useState(null);
     const blogPosts = [
-        // {
-        //     id: 2,
-        //     header: "Coming Soon",
-        //     description: null,
-        //     date: null,
-        //     topic: null,
-        //     detailsComponent: null,
-        // },
         {
             id: 1,
             header: "UC Irvine 2025 Commencement",
