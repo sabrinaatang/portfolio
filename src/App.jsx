@@ -10,7 +10,6 @@ import "../src/App.css";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />

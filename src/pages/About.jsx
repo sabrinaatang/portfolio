@@ -1,7 +1,10 @@
 import profile from "../images/profile.png";
+import Navbar from "../components/Navbar";
 
 function About() {
     return (
+        <>
+        <Navbar />
         <div className="about-page" style={{ display: "flex", padding: "200px" }}>
             <div className="left">
                 <h2>Hi, my name is Sabrina Tang.</h2>
@@ -30,6 +33,8 @@ function About() {
                 <img src={profile} alt="Profile Picture" />
             </div>
         </div>
+        </>
+        
     );
 }
 

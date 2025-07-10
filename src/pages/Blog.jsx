@@ -2,6 +2,7 @@ import React from "react";
 import "../styling/Blog.css"
 import { useState } from "react";
 import Bp1 from "../components/BlogPosts/Bp1.jsx"
+import Navbar from "../components/Navbar.jsx";
 
 function Blog() {
     const [selectedPost, setSelectedPost] = useState(null);
@@ -34,6 +35,7 @@ function Blog() {
     };
     return (
         <div className="blog-page">
+        <Navbar />
         <div className="blog-section">
             <h1 className="blog-title">Blog</h1>
             <p className="blog-description">

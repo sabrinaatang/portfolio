@@ -1,8 +1,8 @@
 import React from "react";
 import "../styling/Portfolio.css"
 import Projects from "../components/Projects";
-import Spline from "@splinetool/react-spline";
-
+import backgroundVideo from "../images/backgroundVideo.mov"
+import Navbar from "../components/Navbar";
 
 
 
@@ -10,7 +10,15 @@ const Portfolio = () => {
     return(
         <>
         <div className="portfolioPage">
-        <Spline scene="https://prod.spline.design/UWHn6oLEv7KLrR3O/scene.splinecode" />
+            <Navbar />
+            <video className="background-video" autoPlay loop muted>
+                <source src={backgroundVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div className="text-overlay">
+                    <h1>Sabrina Tang</h1>
+                    <p>Designer, Researcher, Creative</p>
+        </div>
         </ div>
         <div className="projectSection">
             <div className="sectionHeader">

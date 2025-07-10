@@ -7,6 +7,7 @@ import angel1 from "../images/angel1.jpg"
 import charm from "../images/charm.jpg"
 import trail1 from "../images/trail1.jpg"
 import "../styling/Photography.css"
+import Navbar from "../components/Navbar";
 
 function Photography() {
     const images = [
@@ -22,6 +23,7 @@ function Photography() {
 
     return (
         <div className="photography-page">
+            <Navbar />
             <h3>Photography</h3>
             <p>A few photos I've taken (various cameras)...</p>
             <div className="photo-gallery">
