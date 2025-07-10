@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styling/Portfolio.css"
 import Projects from "../components/Projects";
 import backgroundVideo from "../images/backgroundVideo.mov"
@@ -7,10 +7,11 @@ import Navbar from "../components/Navbar";
 
 
 const Portfolio = () => {
+    const projectsRef = useRef(null);
     return(
         <>
         <div className="portfolioPage">
-            <Navbar />
+            <Navbar scrollTargetRef={projectsRef}/>
             <video className="background-video" autoPlay loop muted>
                 <source src={backgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -20,7 +21,7 @@ const Portfolio = () => {
                     <p>Designer, Researcher, Creative</p>
         </div>
         </ div>
-        <div className="projectSection">
+        <div ref={projectsRef} className="projectSection">
             <div className="sectionHeader">
                 <div className="title">Projects</div>
                 <p className="description">A brief overview of various case studies and projects I've worked on.</p>

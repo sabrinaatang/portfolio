@@ -18,7 +18,7 @@ function Blog() {
         {
             id: 1,
             header: "UC Irvine 2025 Commencement",
-            description: "If I were to give the commencement speech..",
+            description: "If I were to give a commencement speech..",
             date: "June 14, 2025",
             topic: "Academia",
             detailsComponent: <Bp1 />,

@@ -1,9 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styling/Navbar.css";
 
-function Navbar() {
+function Navbar({ scrollTargetRef }) {
   const location = useLocation();
+  const navigate = useNavigate();
 
   let variant = "default";
   if (location.pathname === "/") {
@@ -16,6 +17,18 @@ function Navbar() {
     variant = "photography";
   }
 
+  const handlePortfolioClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      if (scrollTargetRef?.current) {
+        scrollTargetRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to the Portfolio page
+      navigate("/");
+    }
+  };
+
   return (
     <div className={`bar bar-${variant}`}>
       <div className="brand">
@@ -23,7 +36,9 @@ function Navbar() {
       </div>
       <nav>
         <ul>
-          <li><Link to="/">Portfolio</Link></li>
+          <li>
+            <a href="/" onClick={handlePortfolioClick}>Work</a>
+          </li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/photography">Photography</Link></li>
           <li><Link to="/about">About</Link></li>
