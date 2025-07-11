@@ -1,62 +1,121 @@
-
 .project {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  }
+  
+  .project-image {
+    flex: 0 0 450px;
     height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 1px solid rgba(211, 211, 211, 0.8); /* Adds a thin light grey opaque border */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -2px 4px rgba(255, 255, 255, 0.5); /* Adds a subtle shine and shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: visible;
-}
-.project:hover {
-    transform: scale(1.05); /* Slightly lifts the div on hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2), 0px -2px 6px rgba(255, 255, 255, 0.6); /* Enhances the shadow and shine on hover */
-}
-.projectSection {
-    padding: 0 20px; /* Adds 20px padding to the left and right */
-    margin-top: 40px; /* Adds spacing above the project section */
-}
-
-.sectionHeader {
-    text-align: center; /* Centers the header text */
-    margin-bottom: 20px; /* Adds spacing below the header */
-    height: 100px;
-}
-
-
-
-.description {
-    font-size: 1rem; /* Adjusts the font size for the description */
-    margin-top: 10px; /* Adds spacing above the description */
-}
-
-.projects {
-    display: flex; /* Enables flexbox layout */
-    flex-wrap: wrap; /* Allows projects to wrap to the next line if needed */
-    gap: 20px; /* Adds spacing between project cards */
-}
-.image {
-    width: 50%; /* Takes up 50% of the width */
-    height: 100%; /* Ensures it spans the full height */
-    overflow: hidden; /* Ensures the image doesn't overflow */
-}
-
-.image img {
-    width: 100%; /* Makes the image fill the container's width */
-    height: 100%; /* Makes the image fill the container's height */
-    object-fit: cover; /* Ensures the image scales properly to fit the container */
-}
-
-.profile {
-    width: 50%; /* Takes up the other 50% of the width */
-    display: flex; /* Enables flexbox for centering content */
-    flex-direction: column; /* Aligns content vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    background-color: #f4f4f4; 
-    padding: 20px; /* Adds spacing inside the profile section */
-}
+  }
+  
+  .project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .project-role {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin: 0;
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+  
+  .project-tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .project-tag {
+    background: #f5f5f5;
+    color: #555;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    max-width: 600px;
+  }
+  
+  .project-button {
+    align-self: flex-start;
+    background: none;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .project-button:hover {
+    color: #000;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-image {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .project-info {
+      align-items: center;
+    }
+  
+    .project-description {
+      max-width: 100%;
+    }
+  
+    .project-button {
+      align-self: center;
+    }
+  }
+  
 
 .overlay-background {
     position: fixed;
