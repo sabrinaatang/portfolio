@@ -12,7 +12,7 @@ function About() {
             <h1>Hi, I'm Sabrina Tang.</h1>
             <p>
               I am a recent graduate from UC Irvine with a B.S. in Software Engineering.
-              I’m passionate about user experience design and research, cognitive neural science,
+              I’m passionate about product management, user experience design and research, cognitive neural science,
               and software development.
             </p>
 
@@ -35,7 +35,7 @@ function About() {
             <div className="about-section">
               <h2>Contact</h2>
               <p>
-                <strong>Email:</strong> sabrina.tang321@gmail.com<br />
+                <strong>Email:</strong> sabrit4@uci.edu<br />
                 <strong>LinkedIn:</strong>{" "}
                 <a
                   href="https://linkedin.com/in/sabrinat162"
