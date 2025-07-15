@@ -1,0 +1,80 @@
+.about-page {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    background: #050D23; /* Dark blue background */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .about-left {
+    flex: 1 1 400px;
+  }
+  
+  .about-left h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Keep headings white for readability */
+  }
+  
+  .about-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddddd; /* Slightly lighter for paragraph text */
+  }
+  
+  .about-section {
+    margin-top: 2rem;
+  }
+  
+  .about-section h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: #A64D3A; /* Burgundy headers for sections */
+  }
+  
+  .about-section a {
+    text-decoration: none;
+  }
+  
+  .about-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-right {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .about-right img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 3px solid #0D2C68; /* Blue border around image */
+  }
+  
+  /* Optional: Add a subtle shadow for depth */
+  .about-container {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    border-radius: 8px;
+    padding: 2rem;
+    background: #0D2C68; /* Inner container background */
+  }
+  
+  .linkedin-link {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the link stand out */
+}
+
+.linkedin-link:hover {
+    text-decoration: underline; /* Adds underline on hover for better visibility */
+    color: #005582; /* Darker blue on hover */
+}
