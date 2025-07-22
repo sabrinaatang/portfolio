@@ -7,6 +7,9 @@ import CareTech from "./CareTech.jsx";
 import zothomes from "../images/zothomes.png";
 import ZotHomes from "./ZotHomes.jsx";
 import supernova from "../images/supernova.png";
+import reddit from "../images/reddit.jpeg";
+import RedditRedesign from "./RedditRedesign.jsx";
+import ZotSpace from "./ZotSpace.jsx";
 
 function Projects() {
   const projects = [
@@ -44,6 +47,33 @@ function Projects() {
       description: "E-learning platform for medical professionals and students.",
       tags: ["UI Design", "Full-Stack Development"],
       imageSrc: supernova,
+      detailsComponent: null,
+    },
+    {
+      id: 5,
+      name: "ZotSpace",
+      role: "",
+      description: "",
+      tags: [],
+      imageSrc: null,
+      detailsComponent: <ZotSpace />,
+    },
+    {
+      id: 6,
+      name: "Reddit Redesign",
+      role: "",
+      description: "",
+      tags: [],
+      imageSrc: reddit,
+      detailsComponent: <RedditRedesign />,
+    },
+    {
+      id: 7,
+      name: "Bloom",
+      role: "",
+      description: "",
+      tags: [],
+      imageSrc: null,
       detailsComponent: null,
     },
   ];

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styling/Navbar.css";
 
 function Navbar({ scrollTargetRef }) {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   let variant = "default";
   if (location.pathname === "/") {
@@ -18,15 +19,18 @@ function Navbar({ scrollTargetRef }) {
   }
 
   const handlePortfolioClick = (e) => {
+    e.preventDefault();
     if (location.pathname === "/") {
-      e.preventDefault();
       if (scrollTargetRef?.current) {
         scrollTargetRef.current.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Navigate to the Portfolio page
       navigate("/");
     }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -34,8 +38,11 @@ function Navbar({ scrollTargetRef }) {
       <div className="brand">
         <Link to="/">SABRINA TANG</Link>
       </div>
+      <div className="hamburger" onClick={toggleMenu}>
+        ☰
+      </div>
       <nav>
-        <ul>
+        <ul className={menuOpen ? "show" : ""}>
           <li>
             <a href="/" onClick={handlePortfolioClick}>Work</a>
           </li>
