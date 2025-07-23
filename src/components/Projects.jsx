@@ -10,6 +10,10 @@ import supernova from "../images/supernova.png";
 import reddit from "../images/reddit.jpeg";
 import RedditRedesign from "./RedditRedesign.jsx";
 import ZotSpace from "./ZotSpace.jsx";
+import zotspace from "../images/zotspace.png"
+import Bloom from "./Bloom.jsx";
+import SuperNova from "./SuperNova.jsx"
+import bloom from "../images/Bloom.jpg"
 
 function Projects() {
   const projects = [
@@ -47,34 +51,34 @@ function Projects() {
       description: "E-learning platform for medical professionals and students.",
       tags: ["UI Design", "Full-Stack Development"],
       imageSrc: supernova,
-      detailsComponent: null,
+      detailsComponent: <SuperNova />,
     },
     {
       id: 5,
       name: "ZotSpace",
-      role: "",
+      role: "UI/UX Lead, Frontend Developer",
       description: "",
-      tags: [],
-      imageSrc: null,
+      tags: ["UI/UX Design", "React", "Frontend Development"],
+      imageSrc: zotspace,
       detailsComponent: <ZotSpace />,
     },
     {
       id: 6,
       name: "Reddit Redesign",
-      role: "",
-      description: "",
-      tags: [],
+      role: "UI/UX Designer",
+      description: "A conceptual redesign of Reddit's interface to improve usability and modernize the user experience.",
+      tags: ["UI/UX Design", "Prototyping", "Figma"],
       imageSrc: reddit,
       detailsComponent: <RedditRedesign />,
     },
     {
       id: 7,
       name: "Bloom",
-      role: "",
-      description: "",
-      tags: [],
-      imageSrc: null,
-      detailsComponent: null,
+      role: "Product Designer, Frontend Developer",
+      description: "An IoT-enabled hydroponic system designed to automate plant care with minimal effort.",
+      tags: ["Product Design", "IoT", "UX Research", "React", "Hardware Integration"],
+      imageSrc: bloom,
+      detailsComponent: <Bloom />,
     },
   ];
 
