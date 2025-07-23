@@ -132,13 +132,14 @@ function Projects() {
             onClick={closeOverlay}
           ></div>
           <div className="overlay-container">
-            <button
-              className="close-button"
-              onClick={closeOverlay}
-            >
-              ×
-            </button>
-            <div className="overlay-content">
+            
+            <div className="overlay-content"
+              ><button
+                className="close-button"
+                onClick={closeOverlay}
+              >
+                ×
+              </button>
               {selectedProject.detailsComponent ? (
                 selectedProject.detailsComponent
               ) : (

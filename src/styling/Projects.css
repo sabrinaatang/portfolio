@@ -204,14 +204,13 @@
     }
 }
 .close-button {
-  position: absolute; /* Positions the button relative to the overlay */
+  position: fixed; /* Positions the button relative to the overlay */
   top: 20px; /* Brings the button down from the top */
   right: 20px; /* Positions the button on the right */
-  z-index: 1001; /* Ensures the button is above the overlay */
-  background-color: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent background for visibility */
-  color: #fff; /* Sets the text color to white */
+  z-index: 9001; /* Ensures the button is above the overlay */
+  background-color: white; /* Adds a semi-transparent background for visibility */
   border: none; /* Removes the border */
-  border-radius: 50%; /* Makes the button circular */
+  border-radius: 4px;
   width: 40px; /* Sets the width of the button */
   height: 40px; /* Sets the height of the button */
   font-size: 1.5rem; /* Adjusts the size of the "×" */
@@ -219,7 +218,6 @@
   display: flex; /* Centers the "×" inside the button */
   align-items: center; /* Vertically centers the "×" */
   justify-content: center; /* Horizontally centers the "×" */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for visibility */
   transition: background-color 0.3s ease; /* Adds a hover effect */
 }
 
