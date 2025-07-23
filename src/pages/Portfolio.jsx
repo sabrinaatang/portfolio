@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../styling/Portfolio.css"
 import Projects from "../components/Projects";
-import backgroundVideo from "../images/backgroundVideo.mov"
+import backgroundVideo from "../assets/backgroundVideo.mov"
 import Navbar from "../components/Navbar";
 
 

@@ -1,6 +1,6 @@
-import ZotSpace from "../images/ZotSpace.mp4"
-import zotspacebefore from "../images/zotspacebefore.png"
-import zotspaceafter from "../images/zotspaceafter.png"
+import ZotSpace from "../assets/ZotSpace.mp4"
+import zotspacebefore from "../assets/zotspacebefore.png"
+import zotspaceafter from "../assets/zotspaceafter.png"
 
 export default function() {
     return(

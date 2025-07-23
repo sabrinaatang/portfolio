@@ -1,4 +1,4 @@
-import sitemap from "../images/sitemap.png"
+import sitemap from "../assets/sitemap.png"
 export default function ZotHomes() {
     return(
         <div className="zothomes-popup" style={{color:"#5C7A2F", width:"100vh", height:"100vh", boxSizing:"border-box"}}>
@@ -56,6 +56,7 @@ export default function ZotHomes() {
                 <li><strong>GitHub Repository:</strong> <a href="https://github.com/sabrinaaatang/INF124" target="_blank" rel="noopener noreferrer">https://github.com/sabrinaaatang/INF124</a></li>
                 <li><strong>Video Demo:</strong> <a href="https://drive.google.com/file/d/1tbuK3u8QQIW-XwUxpnXkMr_YQ5ePK-mp/preview" target="_blank" rel="noopener noreferrer">Demo Video</a></li>
             </ul>
+            <br></br>
         </div>
     )
 }

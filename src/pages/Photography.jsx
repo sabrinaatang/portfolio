@@ -1,11 +1,11 @@
 import React from "react";
-import backbay from "../images/backbay.jpg"
-import dogs from "../images/dogs.jpg"
-import backbay2 from "../images/backbay2.jpg"
-import taipei from "../images/taipei.jpg"
-import angel1 from "../images/angel1.jpg"
-import charm from "../images/charm.jpg"
-import trail1 from "../images/trail1.jpg"
+import backbay from "../assets/backbay.jpg"
+import dogs from "../assets/dogs.jpg"
+import backbay2 from "../assets/backbay2.jpg"
+import taipei from "../assets/taipei.jpg"
+import angel1 from "../assets/angel1.jpg"
+import charm from "../assets/charm.jpg"
+import trail1 from "../assets/trail1.jpg"
 import "../styling/Photography.css"
 import Navbar from "../components/Navbar";
 

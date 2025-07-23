@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import "../styling/Projects.css";
 import TheSocialARC from "./TSA.jsx";
-import theSocialARC from "../images/theSocialARC.png";
-import caretech from "../images/caretech.png";
+import theSocialARC from "../assets/theSocialARC.png";
+import caretech from "../assets/caretech.png";
 import CareTech from "./CareTech.jsx";
-import zothomes from "../images/zothomes.png";
+import zothomes from "../assets/zothomes.png";
 import ZotHomes from "./ZotHomes.jsx";
-import supernova from "../images/supernova.png";
-import reddit from "../images/reddit.jpeg";
+import supernova from "../assets/supernova.png";
+import reddit from "../assets/reddit.jpeg";
 import RedditRedesign from "./RedditRedesign.jsx";
 import ZotSpace from "./ZotSpace.jsx";
-import zotspace from "../images/zotspace.png"
+import zotspace from "../assets/zotspace.png"
 import Bloom from "./Bloom.jsx";
 import SuperNova from "./SuperNova.jsx"
-import bloom from "../images/bloom.JPG"
+import bloom from "../assets/bloom.JPG"
 
 function Projects() {
   const projects = [

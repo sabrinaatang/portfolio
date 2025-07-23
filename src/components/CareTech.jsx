@@ -1,8 +1,8 @@
 import "../styling/CareTech.css"
-import jake from "../images/jake.png"
-import christi from "../images/christi.png"
-import ct1 from "../images/ct1.png"
-import ct2 from "../images/ct2.png"
+import jake from "../assets/jake.png"
+import christi from "../assets/christi.png"
+import ct1 from "../assets/ct1.png"
+import ct2 from "../assets/ct2.png"
 
 function CareTech() {
     return(

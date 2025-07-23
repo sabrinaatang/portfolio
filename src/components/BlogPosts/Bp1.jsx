@@ -1,5 +1,5 @@
 import React from "react"
-import profile from "../../images/profile.png"
+import profile from "../../assets/profile.png"
 function Bp1() {
     return(
         <div>

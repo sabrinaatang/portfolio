@@ -1,5 +1,6 @@
 import "../styling/Bloom.css"
-import BloomPoster from "../images/BloomPoster.jpg"
+import BloomPoster from "../assets/BloomPoster.jpg"
+import BloomPDF from "../assets/BloomPDF.pdf"
 
 export default function Bloom() {
     return(
@@ -11,7 +12,17 @@ export default function Bloom() {
             <img src={BloomPoster} />
             <br></br>
             <h2>Objective</h2>
-            
+
+            <br></br>
+            <h2>Documentation</h2>
+            <iframe
+                src={BloomPDF}
+                width="100%"
+                height="1000px"
+                style={{ border: "none" }}
+                title="Bloom Project PDF"
+            ></iframe>
+            <br></br>
         </div>
     )
 }

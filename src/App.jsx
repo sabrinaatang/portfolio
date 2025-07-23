@@ -4,7 +4,6 @@ import Portfolio from './pages/Portfolio';
 import Blog from './pages/Blog';
 import Photography from './pages/Photography';
 import About from './pages/About';
-import Navbar from './components/Navbar';
 import "../src/App.css";
 
 function App() {
