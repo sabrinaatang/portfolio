@@ -13,7 +13,7 @@ import ZotSpace from "./ZotSpace.jsx";
 import zotspace from "../images/zotspace.png"
 import Bloom from "./Bloom.jsx";
 import SuperNova from "./SuperNova.jsx"
-import bloom from "../images/Bloom.JPG"
+import bloom from "../images/bloom.JPG"
 
 function Projects() {
   const projects = [
