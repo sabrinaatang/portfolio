@@ -127,6 +127,12 @@ function Projects() {
 
       {selectedProject && (
         <>
+          <button
+            className="close-button"
+            onClick={closeOverlay}
+          >
+            ×
+          </button>
           <div
             className="overlay-background"
             onClick={closeOverlay}
@@ -134,12 +140,7 @@ function Projects() {
           <div className="overlay-container">
             
             <div className="overlay-content"
-              ><button
-                className="close-button"
-                onClick={closeOverlay}
               >
-                ×
-              </button>
               {selectedProject.detailsComponent ? (
                 selectedProject.detailsComponent
               ) : (

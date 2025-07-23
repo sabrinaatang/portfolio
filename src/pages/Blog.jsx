@@ -55,7 +55,7 @@ function Blog() {
             {selectedPost && (
             <div className="blog-details-overlay">
                 <div className="blog-details">
-                    <button className="close-button" onClick={closeDetails}>
+                    <button className="closebutton" onClick={closeDetails}>
                         ×
                     </button>
                     {selectedPost.detailsComponent}
